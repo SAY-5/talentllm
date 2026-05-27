@@ -1,0 +1,167 @@
+[
+  {
+    "id": "emp-001",
+    "type": "employee",
+    "name": "Ava Bennett",
+    "title": "Senior Data Engineer",
+    "department": "Data Platform",
+    "location": "Austin",
+    "skills": ["Python", "Spark", "Airflow", "SQL"],
+    "manager": "Diego Ramos",
+    "text": "Ava Bennett is a Senior Data Engineer in the Data Platform department based in Austin. She reports to Diego Ramos and works with Python, Spark, Airflow, and SQL."
+  },
+  {
+    "id": "emp-002",
+    "type": "employee",
+    "name": "Liam Carter",
+    "title": "Machine Learning Engineer",
+    "department": "Applied Research",
+    "location": "Seattle",
+    "skills": ["Python", "PyTorch", "Statistics", "SQL"],
+    "manager": "Priya Nair",
+    "text": "Liam Carter is a Machine Learning Engineer in Applied Research based in Seattle. He reports to Priya Nair and works with Python, PyTorch, Statistics, and SQL."
+  },
+  {
+    "id": "emp-003",
+    "type": "employee",
+    "name": "Sofia Alvarez",
+    "title": "Frontend Engineer",
+    "department": "Product Engineering",
+    "location": "Remote",
+    "skills": ["TypeScript", "React", "CSS", "Accessibility"],
+    "manager": "Diego Ramos",
+    "text": "Sofia Alvarez is a Frontend Engineer in Product Engineering working remotely. She reports to Diego Ramos and works with TypeScript, React, CSS, and Accessibility."
+  },
+  {
+    "id": "emp-004",
+    "type": "employee",
+    "name": "Noah Kim",
+    "title": "Site Reliability Engineer",
+    "department": "Infrastructure",
+    "location": "Austin",
+    "skills": ["Go", "Kubernetes", "Terraform", "Linux"],
+    "manager": "Priya Nair",
+    "text": "Noah Kim is a Site Reliability Engineer in Infrastructure based in Austin. He reports to Priya Nair and works with Go, Kubernetes, Terraform, and Linux."
+  },
+  {
+    "id": "emp-005",
+    "type": "employee",
+    "name": "Maya Singh",
+    "title": "Product Manager",
+    "department": "Product Engineering",
+    "location": "Seattle",
+    "skills": ["Roadmapping", "Analytics", "SQL", "Communication"],
+    "manager": "Helen Zhao",
+    "text": "Maya Singh is a Product Manager in Product Engineering based in Seattle. She reports to Helen Zhao and works on Roadmapping, Analytics, SQL, and Communication."
+  },
+  {
+    "id": "course-101",
+    "type": "course",
+    "code": "DATA-101",
+    "name": "Distributed Data Processing with Spark",
+    "provider": "Internal Academy",
+    "hours": 12,
+    "skills": ["Spark", "Python"],
+    "text": "Course DATA-101 Distributed Data Processing with Spark is offered by the Internal Academy. It runs for 12 hours and covers Spark and Python."
+  },
+  {
+    "id": "course-102",
+    "type": "course",
+    "code": "ML-201",
+    "name": "Applied Deep Learning",
+    "provider": "Internal Academy",
+    "hours": 20,
+    "skills": ["PyTorch", "Statistics"],
+    "text": "Course ML-201 Applied Deep Learning is offered by the Internal Academy. It runs for 20 hours and covers PyTorch and Statistics."
+  },
+  {
+    "id": "course-103",
+    "type": "course",
+    "code": "WEB-110",
+    "name": "Accessible Frontend Development",
+    "provider": "OpenCourse",
+    "hours": 8,
+    "skills": ["React", "Accessibility"],
+    "text": "Course WEB-110 Accessible Frontend Development is offered by OpenCourse. It runs for 8 hours and covers React and Accessibility."
+  },
+  {
+    "id": "course-104",
+    "type": "course",
+    "code": "OPS-150",
+    "name": "Kubernetes Operations",
+    "provider": "OpenCourse",
+    "hours": 16,
+    "skills": ["Kubernetes", "Terraform"],
+    "text": "Course OPS-150 Kubernetes Operations is offered by OpenCourse. It runs for 16 hours and covers Kubernetes and Terraform."
+  },
+  {
+    "id": "comp-201",
+    "type": "completion",
+    "employee": "Ava Bennett",
+    "course_code": "DATA-101",
+    "course_name": "Distributed Data Processing with Spark",
+    "completed_on": "2025-03-14",
+    "score": 92,
+    "text": "Ava Bennett completed course DATA-101 Distributed Data Processing with Spark on 2025-03-14 with a score of 92."
+  },
+  {
+    "id": "comp-202",
+    "type": "completion",
+    "employee": "Liam Carter",
+    "course_code": "ML-201",
+    "course_name": "Applied Deep Learning",
+    "completed_on": "2025-04-02",
+    "score": 88,
+    "text": "Liam Carter completed course ML-201 Applied Deep Learning on 2025-04-02 with a score of 88."
+  },
+  {
+    "id": "comp-203",
+    "type": "completion",
+    "employee": "Sofia Alvarez",
+    "course_code": "WEB-110",
+    "course_name": "Accessible Frontend Development",
+    "completed_on": "2025-02-20",
+    "score": 95,
+    "text": "Sofia Alvarez completed course WEB-110 Accessible Frontend Development on 2025-02-20 with a score of 95."
+  },
+  {
+    "id": "comp-204",
+    "type": "completion",
+    "employee": "Noah Kim",
+    "course_code": "OPS-150",
+    "course_name": "Kubernetes Operations",
+    "completed_on": "2025-05-09",
+    "score": 90,
+    "text": "Noah Kim completed course OPS-150 Kubernetes Operations on 2025-05-09 with a score of 90."
+  },
+  {
+    "id": "comp-205",
+    "type": "completion",
+    "employee": "Ava Bennett",
+    "course_code": "ML-201",
+    "course_name": "Applied Deep Learning",
+    "completed_on": "2025-05-18",
+    "score": 84,
+    "text": "Ava Bennett completed course ML-201 Applied Deep Learning on 2025-05-18 with a score of 84."
+  },
+  {
+    "id": "cert-301",
+    "type": "certification",
+    "employee": "Noah Kim",
+    "name": "Certified Kubernetes Administrator",
+    "issuer": "Cloud Native Foundation",
+    "issued_on": "2025-06-01",
+    "expires_on": "2028-06-01",
+    "text": "Noah Kim holds the Certified Kubernetes Administrator certification issued by the Cloud Native Foundation on 2025-06-01, expiring 2028-06-01."
+  },
+  {
+    "id": "cert-302",
+    "type": "certification",
+    "employee": "Liam Carter",
+    "name": "Deep Learning Specialization",
+    "issuer": "OpenCourse",
+    "issued_on": "2025-04-15",
+    "expires_on": null,
+    "text": "Liam Carter holds the Deep Learning Specialization certification issued by OpenCourse on 2025-04-15 with no expiry."
+  }
+]
