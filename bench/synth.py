@@ -1,8 +1,9 @@
-"""Generate a large deterministic dataset for benchmarking.
+"""Build a large deterministic dataset for benchmarking.
 
 The records mirror the shape of the packaged dataset but are produced by a fixed
-pseudo-random sequence so the benchmark is reproducible. Each generated query has
-a known supporting record, which lets the benchmark measure retrieval quality.
+pseudo-random sequence so the benchmark is reproducible. Each query built from
+them has a known supporting record, which lets the benchmark measure retrieval
+quality.
 """
 
 from __future__ import annotations

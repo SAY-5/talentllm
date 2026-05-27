@@ -6,7 +6,7 @@ Reports two measured numbers:
   top three retrieved records.
 - mean_latency_ms: average wall-clock time to answer a query end to end.
 
-The dataset is generated deterministically, so the recall figure is reproducible
+The dataset is built deterministically, so the recall figure is reproducible
 on any machine. Latency depends on hardware and is reported for the run only.
 """
 
@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from generate import build  # noqa: E402
+from synth import build  # noqa: E402
 
 from talentllm.assistant import Assistant  # noqa: E402
 from talentllm.dataset import Record  # noqa: E402

@@ -94,7 +94,7 @@ pytest
 
 ## Benchmark
 
-`bench/run_bench.py` generates a deterministic dataset of roughly 960 records and
+`bench/run_bench.py` builds a deterministic dataset of roughly 960 records and
 measures retrieval quality and latency. On the most recent run over 367 queries
 the assistant reached recall@3 of 0.978 with a mean latency of 11.6 ms per query.
 CI runs the same benchmark as a smoke gate and fails if recall@3 drops below 0.30.
