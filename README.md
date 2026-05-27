@@ -49,6 +49,14 @@ The assistant enforces two rules:
 2. When no retrieved record clears the relevance threshold, the assistant returns
    a no-answer response with no citations rather than fabricating an answer.
 
+## Phrasing robustness
+
+Questions can be asked in different words. The query embedding normalizes common
+rewordings onto the vocabulary used in the records, for example treating
+"credential" and "certified" as "certification". Several phrasings of the same
+question therefore surface the same supporting records above the relevance
+threshold, which the phrasing tests assert.
+
 ## Usage
 
 ```bash

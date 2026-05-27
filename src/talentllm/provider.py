@@ -56,14 +56,46 @@ _STOP = {
 }
 
 
+# Maps common rewordings onto the vocabulary used in the records so that a
+# question phrased with a synonym still overlaps the right records. This keeps
+# retrieval robust to varied phrasings without any external model.
+_SYNONYMS = {
+    "credential": "certification",
+    "credentials": "certification",
+    "certified": "certification",
+    "cert": "certification",
+    "earned": "holds",
+    "earn": "holds",
+    "obtained": "holds",
+    "class": "course",
+    "classes": "course",
+    "training": "course",
+    "finished": "completed",
+    "passed": "completed",
+    "team": "department",
+    "group": "department",
+    "based": "located",
+    "location": "located",
+}
+
+
 def tokenize(text: str) -> list[str]:
     """Lowercase word tokens used by both embedding and grounding checks."""
     return _TOKEN.findall(text.lower())
 
 
 def content_tokens(text: str) -> list[str]:
-    """Tokens with stop words removed, used to build the embedding vocabulary."""
-    return [token for token in tokenize(text) if token not in _STOP]
+    """Tokens with stop words removed and synonyms normalized.
+
+    Used to build the embedding vocabulary and to embed queries, so a reworded
+    question maps onto the same terms as the records it should retrieve.
+    """
+    result = []
+    for token in tokenize(text):
+        if token in _STOP:
+            continue
+        result.append(_SYNONYMS.get(token, token))
+    return result
 
 
 class Provider(Protocol):
